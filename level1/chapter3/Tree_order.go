@@ -139,7 +139,7 @@ func posOrderUnRecur(head *Node) {
 			stack = append(stack, head.Right)
 		}
 	}
-	fmt.Print("后续遍历非递归：")
+	fmt.Print("后续遍历非递归")
 	for i := len(gc_stack) - 1; i > 0; i-- {
 		fmt.Printf("%v-", stack[i].Val)
 	}
