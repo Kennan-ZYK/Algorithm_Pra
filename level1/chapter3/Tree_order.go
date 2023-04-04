@@ -118,6 +118,9 @@ func preOrderUnRecur(head *Node) {
 */
 // 原因：栈弹出为头右左，回收栈弹出顺序就是栈逆序，左右头
 func posOrderUnRecur(head *Node) {
+	if head == nil {
+		return
+	}
 	stack := []*Node{}
 	gc_stack := []*Node{}
 	// 先放入第一个结点
